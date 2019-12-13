@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="624dp"
+        android:paddingBottom="80dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        tools:context="crud.Main3Activity">
+
+        <ListView
+            android:id="@+id/list_alat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imakun"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/akun"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.774"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imlist"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/list"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imhome"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/home"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.262"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn_akun"
+            android:layout_width="wrap_content"
+            android:background="@drawable/button3"
+            android:layout_height="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text="AKUN"
+            android:textColor="#7C4A91"
+            android:textSize="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imakun"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="@+id/imakun"
+            app:layout_constraintTop_toBottomOf="@+id/imakun" />
+
+        <Button
+            android:id="@+id/btn_alat"
+            android:layout_width="wrap_content"
+            android:background="@drawable/button3"
+            android:layout_height="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text="LIST ALAT"
+            android:textColor="#7C4A91"
+            android:textSize="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imlist"
+            app:layout_constraintStart_toStartOf="@+id/imlist"
+            app:layout_constraintTop_toBottomOf="@+id/imlist" />
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:background="@drawable/button3"
+            android:layout_height="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text="HOME"
+            android:textColor="#7C4A91"
+            android:textSize="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/imhome"
+            app:layout_constraintHorizontal_bias="0.571"
+            app:layout_constraintStart_toStartOf="@+id/imhome"
+            app:layout_constraintTop_toBottomOf="@+id/imhome" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
